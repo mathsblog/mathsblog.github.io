@@ -7,12 +7,40 @@
 nav{
     width: 100%;
     height: 100px;
+    background-color: #fff;
+}
+
+body{
     background-color: #eee;
 }
 
-ul {
-
+h1 {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
+
+.introimg {
+    display: block;
+    width: 600px;
+    height: 880px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40px;
+}
+
+p {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
 ul li {
     list-style: none;
     display: inline-block;
@@ -23,11 +51,56 @@ ul li a{
     display: block;
     text-decoration: none;
     font-size: 45px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: monospace;
     color: #1e1e1e;
     padding: 0 20px;
 
 }
 ul li a:hover {
-    color: red;
+    color: #0390fc;
+}
+
+@media only screen and (min-width: 768px) {
+    nav{
+        height: 60px;
+    }
+    ul li a{
+        font-size: 30px;
+    }
+    ul li{
+        line-height: 60px;
+    }
+    .introimg {
+        width: 450px;
+        height: 660px;
+    }
+    h1 {
+        font-size: 80px;
+    }
+    p {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .introimg {
+        width: 524px;
+        height: 770px;
+        display-block: none;
+        margin-left: 50px;    
+    }
+    h1 {
+        position: absolute;
+        top: 40px;
+        right: 178px;
+        font-size: 80px;
+        margin-top: 10px;
+    }
+    p {
+        position: absolute;
+        font-size: 30px;
+        top: 200px;
+        right: 50px;
+        left: 660px;
+    }
 }
