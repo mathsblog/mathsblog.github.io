@@ -48,16 +48,19 @@ ul li {
     line-height: 100px;
 }
 ul li a{
+    position: relative;
     display: block;
     text-decoration: none;
     font-size: 45px;
     font-family: monospace;
     color: #1e1e1e;
     padding: 0 20px;
-
+    transition-duration: 500ms;
+    animation-duration: 500ms;
 }
 ul li a:hover {
     color: #0390fc;
+    top: -5px;
 }
 
 @media only screen and (min-width: 768px) {
