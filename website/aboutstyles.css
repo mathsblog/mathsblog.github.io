@@ -68,3 +68,29 @@ p {
     margin-left: 20px;
     margin-right: 20px;
 }
+
+@media only screen and (min-width: 1000px) {
+    nav{
+        height: 60px;
+    }
+    ul li a{
+        font-size: 30px;
+    }
+    ul li{
+        line-height: 60px;
+    }
+    .co1{
+        height: 250px;
+        width: auto;
+    }
+    .co2{
+        height: 250px;
+        width: auto;
+    }
+    h1{
+        font-size: 40px;
+    }
+    p{
+        font-size: 30px;
+    }
+}
