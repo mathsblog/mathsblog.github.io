@@ -1,0 +1,5 @@
+@import "./myreset.css";
+
+:root {
+  --theme-color: #ffdb14;
+}
