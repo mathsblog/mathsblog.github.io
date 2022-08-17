@@ -25,7 +25,7 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
           branch: gh-pages
-          folder: build
+          folder: /
           target-folder: /
           clean: true
           clean-exclude: index.html
