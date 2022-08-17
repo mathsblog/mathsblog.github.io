@@ -27,5 +27,3 @@ jobs:
           branch: gh-pages
           folder: /
           target-folder: /
-          clean: true
-          clean-exclude: index.html
