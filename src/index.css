@@ -1,6 +1,7 @@
 /* Add the developer's chosen theme color as accent color */
 :root {
   accent-color: var(--theme-color);
+  font-family: Sans-Serif;
 }
 
 /* Use default dark mode for people with dark mode turned on */

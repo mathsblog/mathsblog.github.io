@@ -1,0 +1,9 @@
+.Figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Figure * {
+    margin: .5em;
+}

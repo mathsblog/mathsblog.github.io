@@ -2,6 +2,8 @@ import React from 'react';
 import { Outlet } from 'react-router';
 
 import styles from './index.css';
+import articleStyles from './components/Article.css';
+import figureStyles from './components/Figure.css';
 
 export default class App extends React.Component {
     render() {
@@ -17,11 +19,12 @@ export default class App extends React.Component {
                     <meta name="description" content="Maths Blog" />
                     <title>Maths Blog</title>
                     <style dangerouslySetInnerHTML={{ __html: styles }} />
+                    <style
+                        dangerouslySetInnerHTML={{ __html: articleStyles }}
+                    />
+                    <style dangerouslySetInnerHTML={{ __html: figureStyles }} />
                 </head>
                 <body>
-                    <noscript>
-                        You need to enable JavaScript to run this app.
-                    </noscript>
                     <Outlet {...this.props} />
                 </body>
             </html>

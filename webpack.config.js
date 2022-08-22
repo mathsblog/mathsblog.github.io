@@ -55,7 +55,7 @@ module.exports = {
     plugins: [
         new StaticSiteGeneratorPlugin(
             'bundle.js',
-            ['/', '/404.html'].concat(
+            ['/', '/404.html', '/articles/'].concat(
                 fs
                     .readdirSync('./src/articles')
                     .filter((a) => a !== 'index.js')
