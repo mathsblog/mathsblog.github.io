@@ -21,10 +21,11 @@ jobs:
       - name: Build
         run: npm run webpack
       
-      - uses: actions/upload-artifact@v3
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v0
         with:
-          name: github-pages
           path: ./dist
+          retension-days: 1
 
   deploy:
     needs: build
