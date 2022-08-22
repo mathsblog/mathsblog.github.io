@@ -19,11 +19,11 @@ jobs:
         run: npm install
 
       - name: Build
-        run: npm run build
+        run: npm run webpack
 
       - name: Deploy to GH Page
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
           branch: gh-pages
-          folder: /
+          folder: /dist/
           target-folder: /

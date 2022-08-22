@@ -1,11 +1,14 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import "./index.css";
-import App from "./App";
+import React from 'react';
+import * as ReactDOMServer from 'react-dom/server';
+import { StaticRouter as Router } from 'react-router-dom/server';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById("root")
-);
+import Routes from './Routes';
+
+export default function render(locals, callback) {
+    var html = ReactDOMServer.renderToStaticMarkup(
+        <Router location={locals.path}>
+            <Routes />
+        </Router>
+    );
+    callback(null, '<!DOCTYPE html>' + html);
+}
