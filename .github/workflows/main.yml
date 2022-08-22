@@ -20,6 +20,11 @@ jobs:
 
       - name: Build
         run: npm run webpack
+      
+      - uses: actions/upload-artifact@v3
+        with:
+          name: build
+          path: /
 
   deploy:
     needs: build
