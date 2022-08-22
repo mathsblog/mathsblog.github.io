@@ -24,7 +24,7 @@ jobs:
       - uses: actions/upload-artifact@v3
         with:
           name: github-pages
-          path: ./public
+          path: ./dist
 
   deploy:
     needs: build
