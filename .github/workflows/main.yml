@@ -25,7 +25,7 @@ jobs:
         uses: actions/upload-pages-artifact@v0
         with:
           path: ./dist
-          retension-days: 1
+          retention-days: 1
 
   deploy:
     needs: build
