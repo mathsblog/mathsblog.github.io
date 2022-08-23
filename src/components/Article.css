@@ -1,31 +1,40 @@
-.Article {
+.Article .progress {
+    position: fixed;
+    width: calc(100% * var(--scrollY) / var(--scrollHeight));
+    margin: 0;
+    height: .25em;
+    background-color: var(--theme-color)
+}
+
+.Article .main {
     display: flex;
     justify-content: center
 }
 
-.Article div {
-    max-width: 60em;
+.Article .main article {
+    max-width: 59em;
+    margin-inline: 1em;
 }
 
-.Article .title {
+.Article .main .title {
     text-align: center;
 }
 
-.Article .reading-time {
+.Article .main .reading-time {
     opacity: 0.5
 }
 
-.Article .author {
+.Article .main .author {
     display: flex;
     align-items: center;
     margin-block: 1em;
 }
 
-.Article .author img {
+.Article .main .author img {
     width: 2em;
     margin-left: 1em;
 }
 
-.Article p {
+.Article .main p {
     margin-block: 1em;
 }
