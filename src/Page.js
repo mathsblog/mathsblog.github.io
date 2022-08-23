@@ -52,6 +52,11 @@ export default class Page extends React.Component {
                         type="text/css"
                         href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css"
                     />
+                    <link
+                        rel="stylesheet"
+                        type="text/css"
+                        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/github-dark.min.css"
+                    ></link>
                     <base href="/" />
                 </head>
                 <body>

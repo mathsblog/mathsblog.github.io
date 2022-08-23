@@ -7,9 +7,7 @@ export default class App extends React.Component {
         return (
             <React.Fragment>
                 <Navbar />
-                <div>
-                    <Outlet {...this.props} />
-                </div>
+                <Outlet {...this.props} />
             </React.Fragment>
         );
     }

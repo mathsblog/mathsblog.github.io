@@ -1,14 +1,15 @@
-.Article .progress {
+/* .Article .progress {
     position: absolute;
     top: 3.5em;
     left: 0;
     right: 0;
     height: calc(var(--scroll-height) - 3.5em);
     z-index: -1;
-}
+} */
 
-.Article .progress div {
+.progress /* div */ {
     position: sticky;
+    margin-top: 3.5em;
     top: 0;
     z-index: 1000;
     width: calc(100% * var(--scroll));

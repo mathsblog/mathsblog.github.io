@@ -47,38 +47,38 @@ export class Article extends React.Component {
                 </div>
             </a>
         ) : (
-            <div className={(this.props.className || '') + ' Article'}>
-                <div className="progress">
-                    <div></div>
-                </div>
-                <div className="main">
-                    <article>
-                        <h1 className="title">{data.title}</h1>
-                        <i className="reading-time">
-                            Reading time: {data.time}
-                        </i>
-                        <a href={'//github.com/' + data.author + '/'}>
-                            <i className="author">
-                                By
-                                <img
-                                    alt=""
-                                    src={
-                                        '//github.com/' +
-                                        data.author +
-                                        '.png?size=20'
-                                    }
-                                />{' '}
-                                {data.author}
+            <React.Fragment>
+                <div className="progress"></div>
+                <div className={(this.props.className || '') + ' Article'}>
+                    <div className="main">
+                        <article>
+                            <h1 className="title">{data.title}</h1>
+                            <i className="reading-time">
+                                Reading time: {data.time}
                             </i>
-                        </a>
-                        <Content
-                            components={{
-                                Figure,
-                            }}
-                        />
-                    </article>
+                            <a href={'//github.com/' + data.author + '/'}>
+                                <i className="author">
+                                    By
+                                    <img
+                                        alt=""
+                                        src={
+                                            '//github.com/' +
+                                            data.author +
+                                            '.png?size=20'
+                                        }
+                                    />{' '}
+                                    {data.author}
+                                </i>
+                            </a>
+                            <Content
+                                components={{
+                                    Figure,
+                                }}
+                            />
+                        </article>
+                    </div>
                 </div>
-            </div>
+            </React.Fragment>
         );
     }
 }

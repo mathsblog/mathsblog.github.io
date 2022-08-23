@@ -28,6 +28,6 @@
     height: 1.5em;
 }
 
-.Navbar + * {
+.Navbar ~ :not(.progress) {
     margin: 1em;
 }

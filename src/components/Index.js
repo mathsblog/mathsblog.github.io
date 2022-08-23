@@ -18,8 +18,7 @@ export default class Index extends React.Component {
                         a non-traditional way. Our goal with this is to make
                         mathematics more accessible and enjoyable for people
                         around the world! Click on "articles" at the top to
-                        check out some of our latest content! Below is our most
-                        recent article!
+                        check out some of our latest content!
                     </p>
                 </article>
             </div>

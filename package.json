@@ -26,6 +26,7 @@
         "react-dom": "^18.2.0",
         "react-router": "^6.3.0",
         "react-router-dom": "^6.3.0",
+        "rehype-highlight": "^5.0.2",
         "rehype-katex": "^6.0.2",
         "remark-gfm": "^3.0.1",
         "remark-math": "^5.1.1",
