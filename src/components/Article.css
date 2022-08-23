@@ -1,9 +1,18 @@
 .Article .progress {
-    position: fixed;
-    width: calc(100% * var(--scrollY) / var(--scrollHeight));
+    position: absolute;
+    top: 3.5em;
+    left: 0;
+    right: 0;
+    height: calc(100% + 1em);
+}
+
+.Article .progress div {
+    position: sticky;
+    top: 0;
+    width: calc(100% * var(--scroll));
     margin: 0;
     height: .25em;
-    background-color: var(--theme-color)
+    background-color: var(--theme-color);
 }
 
 .Article .main {
@@ -33,6 +42,7 @@
 .Article .main .author img {
     width: 2em;
     margin-left: 1em;
+    margin-right: .5em;
 }
 
 .Article .main p {

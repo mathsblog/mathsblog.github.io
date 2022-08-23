@@ -1,0 +1,35 @@
+.AboutUs > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.AboutUs > div > a {
+    font-weight: unset !important;
+    transition: scale .2s;
+}
+
+.AboutUs > div > a:hover {
+    scale: 1.1;
+    z-index: 100;
+}
+
+.AboutUs > div > a > div {
+    border-radius: .25em;
+    overflow: hidden;
+    box-shadow: 0 0 2px currentColor;
+    margin-inline: .5em;
+    margin-bottom: 1em;
+}
+
+.AboutUs > div > a > div > img {
+    aspect-ratio: 1;
+    width: 20em;
+}
+
+.AboutUs > div > a > div > div {
+    text-align: center;
+    max-width: 20em;
+    padding: .5em;
+}

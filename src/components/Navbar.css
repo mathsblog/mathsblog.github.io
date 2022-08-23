@@ -1,0 +1,33 @@
+.Navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    box-shadow: 0 .25px 1px currentColor;
+}
+
+.Navbar ul {
+    list-style: none;
+    margin: 0;
+    height: 1.5em;
+    display: flex;
+    align-items: center;
+}
+
+.Navbar ul li {
+    display: inline-block;
+    margin-left: 1em;
+}
+
+.Navbar ul li a {
+    font-weight: unset;
+}
+
+.Navbar ul li a svg {
+    fill: currentColor;
+    vertical-align: middle;
+    height: 1.5em;
+}
+
+.Navbar + * {
+    margin: 1em;
+}

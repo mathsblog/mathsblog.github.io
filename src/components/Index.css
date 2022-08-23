@@ -1,0 +1,13 @@
+.Index {
+    display: flex;
+    justify-content: center;
+    font-size: larger;
+}
+
+.Index * {
+    margin-inline: .5em;
+}
+
+.Index .intro {
+    max-width: 40em;
+}

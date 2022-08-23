@@ -40,13 +40,10 @@ module.exports = {
                 ],
             },
             {
-                test: /\.(png|jpg)$/,
+                test: /\.(png|jpe?g|gif)$/i,
                 use: [
                     {
-                        loader: 'url-loader',
-                        options: {
-                            limit: 200000,
-                        },
+                        loader: 'file-loader',
                     },
                 ],
             },
@@ -55,7 +52,7 @@ module.exports = {
     plugins: [
         new StaticSiteGeneratorPlugin(
             'bundle.js',
-            ['/', '/404.html', '/articles/'].concat(
+            ['/', '/404.html', '/about_us/', '/articles/'].concat(
                 fs
                     .readdirSync('./src/articles')
                     .filter((a) => a !== 'index.js')
@@ -63,4 +60,7 @@ module.exports = {
             )
         ),
     ],
+    node: {
+        __dirname: true,
+    },
 };

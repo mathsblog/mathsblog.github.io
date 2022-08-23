@@ -1,0 +1,53 @@
+.Articles > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.Articles > div > a {
+    font-weight: unset !important;
+    transition: scale .2s;
+}
+
+.Articles > div > a:hover {
+    scale: 1.1;
+    z-index: 100;
+}
+
+.Articles > div > a > div {
+    border-radius: .25em;
+    overflow: hidden;
+    box-shadow: 0 0 2px currentColor;
+    margin-inline: .5em;
+    margin-bottom: 1em;
+}
+
+.Articles > div > a > div > img {
+    aspect-ratio: 1;
+    width: 20em;
+}
+
+.Articles > div > a > div > div {
+    text-align: center;
+    max-width: 20em;
+    padding: .5em;
+}
+
+.Articles > div > a > div > div > p > .reading-time {
+    opacity: 0.5;
+    display: block;
+}
+
+.Articles > div > a > div > div > p > .author {
+    display: flex;
+    align-items: center;
+    margin-block: 1em;
+    justify-content: center;
+}
+
+.Articles > div > a > div > div > p > .author > img {
+    width: 2em;
+    margin-left: 1em;
+    margin-right: .5em;
+}
