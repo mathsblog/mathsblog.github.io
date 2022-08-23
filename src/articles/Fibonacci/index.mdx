@@ -2,12 +2,12 @@ import React from 'react';
 
 import Cover from './cover.png';
 
-<Data
-    title="The Fibonacci Sequence"
-    author="JustTyping1"
-    time="3 minutes"
-    cover={Cover}
-/>
+export const data = {
+    title: 'The Fibonacci Sequence',
+    author: 'JustTyping1',
+    time: '3 minutes',
+    cover: Cover,
+};
 
 The Fibonacci sequence is perhaps one of the most simple and yet complex
 parts of mathematics. To quickly recap, it is a numerical sequence that
@@ -28,8 +28,13 @@ term before i appears to get closer and closer to a specific value as you go
 up in the sequence. As it turns out, mathematicians have named this number
 "phi" and have designated it its own special greek letter. Unlike "pi"
 (which it can sometimes be confused for, given the similar name), phi can be
-expressed and is not transcendental. Phi is exactly equal to (1 + √5)/2 ≈
-1.61803, but why is this number (and by extension the fibonacci sequence)
+expressed and is not transcendental.
+
+<div style={{ marginInline: "auto", width: "max-content" }}>
+    $\phi=\frac{1+\sqrt{5}}{2}≈1.61803$
+</div>
+
+ϕ being phi, but why is this number (and by extension the fibonacci sequence)
 so special? One of the reasons is that we see it all throughout nature.
 
 Let us picture a snail shell, with its mesmerizing spiral. It can be
@@ -40,7 +45,7 @@ Now we repeat this, continuing in a spiral pattern. We end up seeing that
 the side lengths of all the squares in order match the Fibonacci sequence.
 This makes sense as the side of any new square is the sum of the sides of
 the two squares before. Another observation we may make is that the
-rectangle has a side length ratio of 1:Φ (phi). This also seems to make
+rectangle has a side length ratio of $1\ratio{\phi}$. This also seems to make
 sense. Now we draw a spiral through each of the squares such that it goes
 through the common vertices and with this, we have constructed a snail shell
 pattern using the Fibonacci sequence, and that's not all! We can even scale

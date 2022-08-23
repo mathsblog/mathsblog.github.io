@@ -23,12 +23,12 @@ export default class Page extends React.Component {
                     <meta name="theme-color" content="#ffdb14" />
                     <style
                         dangerouslySetInnerHTML={{
-                            __html: ':root{--theme-color:#ffdb14;--scroll:0;}',
+                            __html: ':root{--theme-color:#ffdb14;--scroll:0;--scroll-height:100%;}',
                         }}
                     />
                     <script
                         dangerouslySetInnerHTML={{
-                            __html: 'window.addEventListener("scroll",()=>document.body.style.setProperty("--scroll",document.documentElement.scrollTop/(document.documentElement.scrollHeight-document.documentElement.clientHeight)))',
+                            __html: 'window.addEventListener("scroll",()=>{document.body.style.setProperty("--scroll",document.documentElement.scrollTop/(document.documentElement.scrollHeight-document.documentElement.clientHeight));document.body.style.setProperty("--scroll-height",document.documentElement.scrollHeight+"px");})',
                         }}
                     />
                     <meta name="description" content="Maths Blog" />
@@ -47,6 +47,11 @@ export default class Page extends React.Component {
                     />
                     <style dangerouslySetInnerHTML={{ __html: figureStyles }} />
                     <style dangerouslySetInnerHTML={{ __html: navbarStyles }} />
+                    <link
+                        rel="stylesheet"
+                        type="text/css"
+                        href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css"
+                    />
                     <base href="/" />
                 </head>
                 <body>

@@ -3,12 +3,14 @@
     top: 3.5em;
     left: 0;
     right: 0;
-    height: calc(100% + 1em);
+    height: calc(var(--scroll-height) - 3.5em);
+    z-index: -1;
 }
 
 .Article .progress div {
     position: sticky;
     top: 0;
+    z-index: 1000;
     width: calc(100% * var(--scroll));
     margin: 0;
     height: .25em;
