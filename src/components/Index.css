@@ -11,3 +11,13 @@
 .Index .intro {
     max-width: 40em;
 }
+
+.Index .intro h1 {
+    text-align: center;
+}
+
+@media (orientation: portrait) {
+    .Index {
+        flex-direction: column;
+    }
+}
