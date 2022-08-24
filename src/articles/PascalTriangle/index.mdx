@@ -1,0 +1,56 @@
+import React from 'react';
+
+import Cover from './cover.png';
+
+export const data = {
+    title: 'The Fibonacci Sequence',
+    author: 'JustTyping1',
+    time: '2 minutes',
+    cover: Cover,
+};
+
+The true beauty of mathematics is how universal it really is. No concept is a better
+demonstration of this than pascal’s triangle. Pascal’s triangle is a concept in mathematics.
+It a chart shaped like a triangle in which the first number is 1 and then 2 1s are put
+below it like so:
+1
+1  1
+Then, every number is the sum of the two numbers above it (assuming everything outside the triangle is 0),
+like so:
+1
+1  1
+1  2  1
+1  3  3  1
+1  4  6  4  1
+These numbers show up frequently in probability calculations, which may be deserving of its own article some point
+in the future, but, there is another quite fascinating use to the triangle. For any given expression (1+x)ⁿ, it can
+be expanded. For example:
+
+(1+x)² = x² + 2x + 1
+(1+x)³ = x³ + 3x² + 3x + 1
+(1+x)⁴ = x⁴ + 4x³ + 6x² + 4x + 1
+
+We can now take the coefficients of these terms.
+
+When raised to the 
+2nd  : 1 2 1
+3rd  : 1 3 3 1
+4th  : 1 4 6 4 1
+power, and thus, we can clearly see that there is a correlation with pascal’s triangle. This technique was
+first discovered by Sir Isaac Newton in the 1600s, and this is now known as a quick shortcut to calculate 
+this rather common problem.
+
+Another amazing feature of Pascal’s triangle, is that even though it is named after Blaise Pascal, many other
+cultures had discovered this concept far before Pascal. It is extremely striking to see how, even though these discoveries
+are written in different languages, we can still make sense of exactly what these ancient cultures were thinking. 
+
+import Figure1 from './ancientpascal.png';
+
+<Figure caption="Examples of the Fibonacci spiral in nature.">
+    <img src={Figure1} alt="A version of Pascal's triangle from ancient India" />
+</Figure>
+
+Pascal’s triangle is just one of the many ideas through which the limitlessness of mathematics can be seen.
+It is absolutely incredible how almost any mathematician can recognise Yang Hui (the Chinese version of
+Pascal’s triangle) even though it is in an unfamiliar script. Mathematics has been, quite rightly, been described as
+a universal language. It transcends the barriers between us and gives us medium through which to discover and invent. 
