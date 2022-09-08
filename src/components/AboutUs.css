@@ -8,6 +8,7 @@
 .AboutUs > div > a {
     font-weight: unset !important;
     transition: scale .2s;
+    display: flex;
 }
 
 .AboutUs > div > a:hover {
